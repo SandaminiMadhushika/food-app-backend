@@ -34,24 +34,10 @@ public class FoodService {
 
     public FoodByNameDto getFoodByName(String foodName){
         System.out.println("came");
-        //try {
             Food food = foodRepository.findByName(foodName);
             FoodByNameDto foodByNameDto = mapper.map(food, FoodByNameDto.class);
             return foodByNameDto;
-        //}catch(Exception e){
-            //System.out.println("exceptionnnnnnn");
-          //  System.out.println(e);
-           // return null;
-        //}
     }
-
-//    public FoodByNameDto getFoodByName(String foodName){
-//        System.out.println("came");
-//        Food food = foodRepository.findByName(foodName);
-//        FoodByNameDto foodByNameDto = mapper.map(food, FoodByNameDto.class);
-//        return foodByNameDto;
-//    }
-
 
     public List<FoodDto> getFoodByNameLike(String foodNameString){
             List<Food> foodlist=foodRepository.findByNameStartsWith(foodNameString);

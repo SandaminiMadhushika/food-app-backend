@@ -27,29 +27,6 @@ public class FoodController {
         }
     }
 
-//    @GetMapping("/get-food-by-name/{foodName}")
-//    public ResponseEntity<?> getFoodByName (@PathVariable String foodName) {
-////    @GetMapping(path="/get-food-by-name/{foodName}")
-////    public @ResponseBody FoodByNameDto getFoodByName (@PathVariable String foodName) {
-//       //try {
-//        FoodByNameDto response = foodService.getFoodByName(foodName);
-//        //if (response != null) {
-//            return new ResponseEntity<>(response, HttpStatus.OK);
-////        } else {
-////            return new ResponseEntity<String>("Food not found", HttpStatus.NOT_FOUND);
-////        }
-////            FoodByNameDto food = foodService.getFoodByName(foodName);
-////            return food;
-////        }catch (Exception e){
-////            throw new RecordNotFoundException(e.getMessage());
-////        }
-////        if(food == null) {
-////            System.out.println("Null error");
-////            throw new RecordNotFoundException("Invalid food name : " + foodName);
-////            //return ;
-////
-////        }
-//    }
 
     @GetMapping(path = "/get-food-by-name/{foodName}")
     public ResponseEntity<?> getFoodByName(@PathVariable String foodName) {

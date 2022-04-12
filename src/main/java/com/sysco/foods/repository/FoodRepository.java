@@ -10,7 +10,4 @@ import java.util.List;
 public interface FoodRepository extends JpaRepository<Food, Long> {
     public Food findByName(String foodName);
     public List<Food> findByNameStartsWith(String foodNameString);
-
-//        @Query("SELECT f FROM Food f WHERE CONCAT(p.name, ' ', p.brand, ' ', p.madein, ' ', p.price) LIKE %?1%")    };
-
 }

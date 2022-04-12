@@ -15,7 +15,6 @@ import java.math.BigDecimal;
 @ToString
 public class FoodDto {
 
-    //    public long id;
     public String name;
     public int qty;
     public BigDecimal price;

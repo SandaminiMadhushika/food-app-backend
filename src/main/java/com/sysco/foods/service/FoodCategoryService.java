@@ -27,12 +27,6 @@ public class FoodCategoryService {
                 .stream()
                 .map(x -> mapper.map(x, FoodCategoryDto.class))
                 .collect(Collectors.toList());
-        //System.out.println(foodDtos.get(1).producer.getName());
         return foodCategoryDto;
     }
-
-//    public Food getFoodById(Integer id) {
-//        return foodRepository.findById(Long.valueOf(id)).get();
-//    }
-
 }

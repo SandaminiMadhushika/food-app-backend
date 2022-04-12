@@ -31,9 +31,3 @@ public class FoodCategoryController {
         }
     }
 }
-
-//    @GetMapping(path="/get-food-info/{id}")
-//    public @ResponseBody Food getFoodById (@PathVariable("id") Integer id) {
-//        Food food = foodService.getFoodById(id);
-//        return food;
-//    }
